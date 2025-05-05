@@ -2,12 +2,22 @@
     --font-color: #D93D06;
     --accent-color: white;
     --background-color: blue;
+    --invalid-color: red;
+    --valid-color: green;
 }
 
 html, body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h1 {
+    color: black;
+}
+
+h2 {
+    color: var(--font-color);
 }
 
 .container {
@@ -51,8 +61,21 @@ html, body{
 }
 
 form {
-    border: 1px solid #D93D06;
+    text-align: center;
     background-color: white;
     color: var(--font-color);
 }
+
+label {
+    padding: auto;
+    text-align: left;
+    padding-right: 50px;
+}
+
+input[type^='text']:invalid, input[type^='email']:invalid {
+    border: 2px var(--invalid-color) solid;
+} 
+input[type^='text']:invalid, input[type^='email']:invalid {
+    border: 2px var(--valid-color) solid;
+} 
 
