@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div class="logo">Hanafuya</div>
+            <img src="./photos/zuyet-awarmatik-R-dNb0R7ukM-unsplash.jpg" alt="Chinese market">
+        </div>
+        <div class="right-section">
+            <div class="right-top">
+                <h1>Hanafuya MarketPlace</h1>
+                <h2>Buy things for cheap.</h2>
+            </div>
+            <form>
+                <div>
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" placeholder="John Cena" required>
+                </div>
+                <div>
+                    <label for="number">Number: </label>
+                    <input type="text" id="number" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$" placeholder="(123)-456-7890" required>
+                </div>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$" placeholder="JohnDoe@email.com" required>
+                </div>
+                <div>
+                    <input type="checkbox" id='agree'value="I Agree" required>
+                    <label for="agree">I AGREE to recieve email & text notifications about [company's] products and promotions.</label>
+                </div>
+
+                <input type="submit" value="Submit">
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>
